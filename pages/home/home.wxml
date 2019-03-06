@@ -1,0 +1,49 @@
+<view class='index'>
+
+  <!-- 头部 -->
+  <view class='index-hd'>
+    <!-- 图片 -->
+    <image class='index-logo' src='/image/kind/logo.png'></image>
+
+    <!-- 文字 -->
+    <view class='index-desc'>以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见小程序开发文档。</view>
+  </view>
+
+  <!-- body 部分 -->
+  <view class='index-bd'>
+    <!--  -->
+    <view class='kind-list'>
+
+      <!-- block 包装元素不渲染 开始遍历-->
+      <block wx:for-items="{{list}}" wx:key="item.id">
+
+        <!-- 子条目渲染 -->
+        <view class='kind-list-item'>
+
+          <!-- 子条目 head -->
+          <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+            <view class='kind-list-text'>{{item.name}}</view>
+            <image class='kind-list-img' src='/image/kind/{{item.id}}.png'></image>
+          </view>
+
+          <!-- 子条目 body -->
+          <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+            <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+              <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                <navigator url='pages/{{page}}/{{page}}' class='navigator'>
+                  <view class='navigator-text'>{{page}}</view>
+                  <view class='navigator-arrow'></view>
+                </navigator>
+              </block>
+            </view>
+          </view>
+
+        </view>
+      </block>
+
+
+    </view>
+  </view>
+
+
+</view>

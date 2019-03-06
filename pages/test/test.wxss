@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.container_item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background: red;
+}

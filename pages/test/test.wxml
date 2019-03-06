@@ -1,0 +1,31 @@
+<!-- <view class='container'>
+
+<view class="container_item"></view>
+
+<view class="container_item"></view>
+
+<view class="container_item"></view>
+
+</view> -->
+
+
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
+
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.message}}
+</view>
+
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;">
+  {{item.id}}
+</switch>
+
+<template name="msgItem">
+  <view>
+    <text>{{index}}: {{msg}}</text>
+    <text>Time: {{time}}</text>
+  </view>
+</template>
+
+<template is="msgItem" data="{{...item}}" />
