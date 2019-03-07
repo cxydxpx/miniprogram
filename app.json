@@ -6,7 +6,8 @@
 
     "pages/component/pages/view/view",
 
-    "pages/API/pages/login/login"
+    "pages/API/pages/login/login",
+    "pages/API/pages/get-user-info/get-user-info"
   ],
   "window": {
     "backgroundTextStyle": "light",

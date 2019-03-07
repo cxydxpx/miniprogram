@@ -1,0 +1,27 @@
+/* pages/API/pages/get-user-info/get-user-info.wxss */
+
+.user-body {
+  flex-grow: 1;
+}
+
+.user-info {
+  background-color: #fff;
+  height: 230rpx;
+  text-align: center;
+  padding: 50rpx 0 150rpx 0;
+}
+
+.user-info-title {
+  margin-bottom: 100rpx;
+}
+
+.user-info-text {
+  color: #ccc;
+  font-size: 30rpx;
+}
+
+.user-operation {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  margin-top: 60rpx;
+}

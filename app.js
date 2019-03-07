@@ -50,8 +50,7 @@ App({
     },
 
     globalData: {
-      hasLogin: false,
-      userInfo: "apen"
+      hasLogin: false, 
     }
   }
 
