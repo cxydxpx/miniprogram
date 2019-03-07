@@ -1,0 +1,40 @@
+<!--logs.wxml-->
+<!--充当HTML的角色  -->
+<!-- <view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view> -->
+<view>
+  <!-- 头部 -->
+  <view class='index-hd'>
+    <image class='index-logo' src='/image/resources/kind/logo.png'></image>
+    <view class='index-text'>以下将演示小程序接口能力，具体属性参数详见小程序开发文档。</view>
+  </view>
+
+  <view class='index-bd'>
+    <view class='kind-list'>
+      <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+        <view class='kind-list-item'>
+          <!-- 子条目 头部 -->
+          <view id='{{item.id}}' class='kind-list-item-hd' bindtap='kindToggle'>
+            <view class='kind-list-text '>{{item.name}}</view>
+            <image class='kind-list-img ' src='/image/resources/kind/{{item.id}}.png '></image>
+          </view>
+          <!-- 子条目 body -->
+          <view class='kind-list-item-bd {{item.open ? "kind-list-item-bd-show" : ""}}'>
+            <view class='navigator-box  {{item.open ? "navigator-box-show":""}}' >
+              <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                <navigator class='navigator' url='pages/{{page.url}}' >
+                  <view class='navigator-text'>{{page.zh}}</view>
+                  <view class='navigator-arrow'></view>
+                </navigator>
+              </block>
+            </view>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
