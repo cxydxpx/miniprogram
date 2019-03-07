@@ -2,7 +2,11 @@
   "pages": [
     "pages/component/home",
     "pages/API/index",
-    "pages/test/test"
+    "pages/test/test",
+
+    "pages/component/pages/view/view",
+
+    "pages/API/pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,39 @@
+.flex-wrp {
+  margin-top: 60rpx;
+  display: flex;
+}
+
+.flex-item {
+  width: 200rpx;
+  height: 300rpx;
+  font-size: 26rpx;
+}
+
+.flex-item-V {
+  margin: 0 auto;
+  width: 300rpx;
+  height: 200rpx;
+}
+
+/* 自己 */
+
+.page-column {
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-column-title {
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.page-column-space {
+  margin: 0 80rpx;
+}
+
+.flex-me{
+  display: flex;
+  margin-top: 60rpx;
+}
